@@ -1,0 +1,217 @@
+{
+  "seo": {
+    "homeTitle": "Satalana Luxor - Maisons & Villas de Luxe Privées",
+    "accommodationTitle": "Détails de l'Hébergement | Satalana Luxor",
+    "tourTitle": "Détails de la Visite | Satalana Luxor",
+    "dahabiyaTitle": "Croisières Privées en Dahabiya | Satalana Luxor"
+  },
+  "nav": {
+    "accommodations": "Hébergements",
+    "tours": "Visites",
+    "cruise": "Croisière Dahabiya",
+    "about": "À Propos",
+    "inquire": "Demande d'Infos",
+    "back": "Retour au Voyage"
+  },
+  "hero": {
+    "title": "Maisons & Villas Privées de Style Traditionnel à Louxor",
+    "subtitle1": "Vivez un séjour unique au cœur de la nature, entouré de vie traditionnelle, de beauté, d'histoire et de civilisation dans la ville magique de Louxor.",
+    "subtitle2": "Nous proposons une variété de maisons et villas de luxe de style traditionnel. Les forfaits incluent hébergement privé, visites, transferts et activités sur mesure.",
+    "bookStay": "Réserver Votre Séjour",
+    "explore": "Explorer nos Expériences",
+    "val_accommodation": "Hébergement de Luxe",
+    "val_tours": "Visites Privées",
+    "val_cruises": "Croisières sur le Nil",
+    "val_authentic": "Expériences Authentiques"
+  },
+  "accommodations": {
+    "sub": "Refuges Exclusifs",
+    "title": "Hébergements d'Exception",
+    "desc": "Immergez-vous dans un luxe authentique avec une architecture inspirée de l'héritage égyptien antique et des dunes de sable.",
+    "rate": "€{{price}} / personne / nuit",
+    "comingSoon": "Bientôt Disponible",
+    "privateStay": "Séjour Privé",
+    "theExperience": "L'Expérience",
+    "highlights": "Points Forts",
+    "contactReserve": "Contacter l'Hôte pour Réserver",
+    "conciergeText": "Veuillez contacter directement Alaa et notre équipe de conciergerie Satalana pour vérifier la disponibilité et personnaliser votre séjour privé.",
+    "emailNow": "Envoyez-nous un Email",
+    "standardRate": "Tarif Standard",
+    "personNight": "/ personne / nuit",
+    "westBankEgypt": "Rive Ouest, Louxor, Égypte",
+    "props": {
+      "property-1": {
+        "name": "Maison Traditionnelle",
+        "description": "Un paysage naturel au milieu des montagnes, de la nature et des temples pharaoniques.",
+        "features": ["Vues sur la Montagne", "Environnement Naturel", "Proche des Temples Pharaoniques"]
+      },
+      "property-2": {
+        "name": "Villa Traditionnelle",
+        "description": "Un paysage naturel au cœur de la nature sauvage.",
+        "features": ["Paysage Naturel", "Nature Immersive", "Retraite Paisible"]
+      }
+    }
+  },
+  "tours": {
+    "sub": "Expéditions Sur Mesure",
+    "title": "Visites & Expériences Curatées",
+    "desc": "Découvrez les secrets intemporels du cœur antique de l'Égypte grâce à des itinéraires sur mesure menés par des égyptologues locaux certifiés.",
+    "duration": "Visite Privée - {{duration}}",
+    "fullDay": "Journée Complète",
+    "flexible": "Flexible",
+    "fromPrice": "À partir de €{{price}}",
+    "viewDetails": "Voir les Détails",
+    "additional": {
+      "sub": "Voyage Immersif",
+      "title": "Expériences Additionnelles",
+      "desc": "Éloignez-vous de l'ordinaire et personnalisez votre voyage avec nos activités optionnelles et authentiques.",
+      "horseCamel": {
+        "title": "Balades à Cheval & Chameau",
+        "desc": "Découvrez les paysages de Louxor sous un angle unique sur des montures traditionnelles."
+      },
+      "bbq": {
+        "title": "Barbecue dans le Désert",
+        "desc": "Savourez un barbecue fraîchement préparé dans la tranquillité du désert égyptien."
+      },
+      "camping": {
+        "title": "Camping dans le Désert",
+        "desc": "Passez une nuit sous les étoiles dans un campement désertique authentique."
+      }
+    },
+    "days": {
+      "day-1": {
+        "title": "Jour 1 : Karnak & Coucher de Soleil sur la Rive Ouest",
+        "description": "Explorez le temple de Karnak, le musée de Louxor, le temple de Louxor et profitez d'un coucher de soleil sur la rive ouest."
+      },
+      "day-2": {
+        "title": "Jour 2 : Médinet Habou & Vallée des Reines",
+        "description": "Visitez Médinet Habou, la Vallée des Reines, le temple de Seti, Deir el-Medina et les ateliers d'albâtre."
+      },
+      "day-3": {
+        "title": "Jour 3 : Vallée des Rois & Île aux Bananes",
+        "description": "Découvrez la Vallée des Rois, le temple de Hatchepsout, les Colosses de Memnon et une excursion sur le Nil vers l'île aux Bananes."
+      },
+      "day-4": {
+        "title": "Jour 4 : Montgolfière & Navigation en Felouque",
+        "description": "Vivez un vol en montgolfière suivi d'une promenade en felouque et d'un coucher de soleil sur le Nil."
+      },
+      "day-5": {
+        "title": "Jour 5 : Arrivée & Activités Optionnelles",
+        "description": "Activités optionnelles à votre arrivée pour personnaliser votre premier jour à Louxor."
+      }
+    },
+    "details": {
+      "journey": "Le Voyage",
+      "pricingTitle": "Grille Tarifaire",
+      "carDriver": "Voiture Privée avec Chauffeur",
+      "carDriverDesc": "Transport privé confortable jusqu'à 4 personnes pour toute la journée.",
+      "guide": "Guide Touristique Professionnel",
+      "guideDesc": "Supplément optionnel pour des explications d'experts et un contexte historique approfondi.",
+      "perDay": "par jour",
+      "enhance": "Sublimez Votre Séjour",
+      "addOptional": "Activités Optionnelles Additionnelles",
+      "bookTour": "Réserver cette Visite",
+      "bookTourDesc": "Pour réserver cet itinéraire ou le personnaliser avec des activités optionnelles, veuillez contacter notre équipe directement. Nous serons ravis de concevoir un programme à votre rythme.",
+      "emailUs": "Écrivez-nous",
+      "callWhatsapp": "Appel / WhatsApp",
+      "location": "Lieu",
+      "egypt": "Louxor, Égypte",
+      "sendEmail": "Envoyer un Email",
+      "optionalList": {
+        "horse": {
+          "title": "Balades à Cheval",
+          "desc": "Explorez les paysages de Louxor sur d'authentiques chevaux arabes."
+        },
+        "camel": {
+          "title": "Balades à Chameau",
+          "desc": "Un moyen traditionnel de traverser les dunes de désert et les villages locaux."
+        },
+        "bbq": {
+          "title": "Barbecue dans le Désert",
+          "desc": "Un dîner barbecue fraîchement préparé dans le calme du désert."
+        },
+        "camping": {
+          "title": "Camping dans le Désert",
+          "desc": "Passez la nuit sous les étoiles dans un campement traditionnel."
+        },
+        "dahabiya": {
+          "title": "Croisières sur le Nil en Dahabiya",
+          "desc": "Une navigation exclusive de Louxor à Assouan pour un séjour de 4 nuits."
+        },
+        "custom": {
+          "title": "Expériences Sur Mesure",
+          "desc": "Des activités personnalisées selon vos préférences individuelles."
+        }
+      }
+    }
+  },
+  "dahabiya": {
+    "sub": "Navigation Mystique sur le Nil",
+    "title": "Croisières Privées en Dahabiya",
+    "desc": "Vivez une croisière privée en Dahabiya pour 10 à 15 personnes. Profitez d'un voyage exclusif d'une nuit sur le Nil pour 3000 €, créant des souvenirs inoubliables.",
+    "cta": "S'informer sur les Croisières",
+    "details": {
+      "sub": "L'Expérience",
+      "desc1": "Montez à bord de votre voilier privé Dahabiya et découvrez la magie intemporelle du Nil. Conçu pour des groupes de 10 à 15 personnes, ce charter complet garantit une atmosphère intimiste et exclusive, loin des navires de croisière bondés.",
+      "desc2": "Profitez d'un voyage d'une nuit qui vous plonge dans les rythmes paisibles de la vie fluviale, en passant par des rives luxuriantes, des temples anciens et de superbes couchers de soleil égyptiens, le tout servi par un équipage dédié.",
+      "charterTitle": "Détails du Charter",
+      "capacity": "Capacité",
+      "guests": "10-15 Invités",
+      "exclusivity": "Exclusivité",
+      "fullCharter": "Bateau Privatisé",
+      "duration": "Durée",
+      "oneNight": "Une Nuit",
+      "totalRate": "Tarif Total du Charter",
+      "secures": "Réserve l'ensemble du navire pour votre groupe privé pour l'expérience d'une nuit.",
+      "perVoyage": "Par Voyage",
+      "inquireTitle": "S'informer sur les Charters",
+      "inquireDesc": "La navigation en Dahabiya est très demandée et nécessite une réservation préalable. Veuillez contacter notre conciergerie pour vérifier les dates et discuter de vos besoins spécifiques.",
+      "departures": "Départs",
+      "requestAvailability": "Demander les Disponibilités",
+      "nileCruises": "Croisières sur le Nil",
+      "charter": "Charter Exclusif",
+      "title": "Navigation Privée en Dahabiya"
+    }
+  },
+  "about": {
+    "sub": "Notre Histoire",
+    "title": "À Propos & Satalana Travels",
+    "desc1": "Avec 15 ans d'expérience dans le secteur du tourisme, Alaa a consacré sa vie à faire découvrir la véritable essence de l'Égypte. Sa passion profonde pour l'histoire et la culture garantit à chaque invité une découverte authentique de Louxor.",
+    "desc2": "La mission de Satalana Travels est de fournir des hébergements de luxe, des visites privées et un service personnalisé, garantissant un voyage mémorable, fluide et unique.",
+    "exp": "15+ Ans d'Expérience",
+    "service": "Service Personnalisé",
+    "tours": "Visites Privées",
+    "authentic": "Expériences Authentiques",
+    "why": {
+      "accTitle": "Hébergement de Luxe",
+      "accDesc": "Séjournez dans nos maisons traditionnelles méticuleusement conçues.",
+      "toursTitle": "Visites Privées",
+      "toursDesc": "Explorez avec votre propre voiture, chauffeur et guide optionnel.",
+      "cruiseTitle": "Croisières sur le Nil",
+      "cruiseDesc": "Naviguez sur le Nil à bord de Dahabiyas traditionnels.",
+      "localTitle": "Expériences Locales",
+      "localDesc": "Participez à des campements dans le désert, barbecues et balades à chameau."
+    }
+  },
+  "contact": {
+    "sub": "Commencer Votre Voyage",
+    "title": "Contactez-nous Directement",
+    "desc": "Contactez directement Alaa et l'équipe de Satalana pour concevoir votre séjour sur mesure à Louxor. Nous privilégions une communication directe afin de personnaliser parfaitement votre expérience.",
+    "email": "Email",
+    "callWhatsapp": "Appel / WhatsApp",
+    "sendEmail": "Envoyer un Email",
+    "inquirySubject": "Demande de Renseignements Satalana"
+  },
+  "footer": {
+    "desc": "Proposer des hébergements de luxe, des visites privées et un service personnalisé au cœur de l'Égypte.",
+    "reservations": "Réservations",
+    "villas": "Villas Privées",
+    "tours": "Visites Privées",
+    "dahabiyas": "Dahabiyas sur le Nil",
+    "company": "Entreprise",
+    "about": "À Propos",
+    "contact": "Contacter l'Hôte",
+    "rights": "© 2026 Satalana. Tous droits réservés.",
+    "shortBrand": "Satalana Luxor"
+  }
+}

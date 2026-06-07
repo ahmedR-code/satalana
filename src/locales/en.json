@@ -1,0 +1,217 @@
+{
+  "seo": {
+    "homeTitle": "Satalana Luxor - Private Luxury Houses & Villas",
+    "accommodationTitle": "Accommodation Details | Satalana Luxor",
+    "tourTitle": "Tour Details | Satalana Luxor",
+    "dahabiyaTitle": "Private Dahabiya Sailing Cruises | Satalana Luxor"
+  },
+  "nav": {
+    "accommodations": "Accommodations",
+    "tours": "Tours",
+    "cruise": "Dahabiya Cruise",
+    "about": "About Us",
+    "inquire": "Inquire Now",
+    "back": "Back to Journey"
+  },
+  "hero": {
+    "title": "Private Luxury Traditional-Style Houses & Villas in Luxor",
+    "subtitle1": "Experience a unique stay in the heart of nature, surrounded by traditional life, beauty, history, and civilization in the magical city of Luxor.",
+    "subtitle2": "We offer a variety of luxury traditional-style homes and villas. Packages include private accommodation, visits, transfers, and tailored activities.",
+    "bookStay": "Book Your Stay",
+    "explore": "Explore Experiences",
+    "val_accommodation": "Luxury Accommodation",
+    "val_tours": "Private Tours",
+    "val_cruises": "Nile Cruises",
+    "val_authentic": "Authentic Experiences"
+  },
+  "accommodations": {
+    "sub": "Exclusive Retreats",
+    "title": "Premium Accommodation Showcase",
+    "desc": "Immerse yourself in authentic luxury with architecture inspired by ancient Egyptian heritage and sand dunes.",
+    "rate": "€{{price}} / person / night",
+    "comingSoon": "Coming Soon",
+    "privateStay": "Private Stay",
+    "theExperience": "The Experience",
+    "highlights": "Highlights",
+    "contactReserve": "Contact Host to Reserve",
+    "conciergeText": "Please reach out directly to Alaa and our Satalana concierge team to check availability and tailor your private stay.",
+    "emailNow": "Email Us Now",
+    "standardRate": "Standard Rate",
+    "personNight": "/ person / night",
+    "westBankEgypt": "West Bank, Luxor, Egypt",
+    "props": {
+      "property-1": {
+        "name": "Traditional House",
+        "description": "A natural landscape amidst mountains, nature, and Pharaonic temples.",
+        "features": ["Mountain Views", "Nature Surroundings", "Near Pharaonic Temples"]
+      },
+      "property-2": {
+        "name": "Traditional Villa",
+        "description": "A natural landscape amidst nature.",
+        "features": ["Natural Landscape", "Immersive Nature", "Quiet Retreat"]
+      }
+    }
+  },
+  "tours": {
+    "sub": "Bespoke Expeditions",
+    "title": "Tours & Curated Experiences",
+    "desc": "Discover the timeless secrets of Egypt's ancient heart with bespoke itineraries led by certified local Egyptologists.",
+    "duration": "{{duration}} Private Tour",
+    "fullDay": "Full Day",
+    "flexible": "Flexible",
+    "fromPrice": "From €{{price}}",
+    "viewDetails": "View Details",
+    "additional": {
+      "sub": "Immersive Travel",
+      "title": "Additional Experiences",
+      "desc": "Step away from the ordinary and customize your journey with our additional, optional activities carefully crafted for authenticity.",
+      "horseCamel": {
+        "title": "Horse & Camel Riding",
+        "desc": "Experience the landscapes of Luxor from a unique vantage point on traditional mounts."
+      },
+      "bbq": {
+        "title": "Desert BBQ",
+        "desc": "Enjoy a freshly prepared barbecue in the tranquility of the Egyptian desert."
+      },
+      "camping": {
+        "title": "Desert Camping",
+        "desc": "Spend a night beneath the stars in an authentic desert camp setting."
+      }
+    },
+    "days": {
+      "day-1": {
+        "title": "Day 1: Karnak & West Bank Sunset",
+        "description": "Explore Karnak Temple, Luxor Museum, Luxor Temple, and enjoy a West Bank sunset."
+      },
+      "day-2": {
+        "title": "Day 2: Medinet Habu & Valley of the Queens",
+        "description": "Visit Medinet Habu, Valley of the Queens, Temple of Seti, Deir el-Medina, and alabaster workshops."
+      },
+      "day-3": {
+        "title": "Day 3: Valley of the Kings & Banana Island",
+        "description": "Discover the Valley of the Kings, Hatshepsut, Colossi of Memnon, and a Nile trip to Banana Island."
+      },
+      "day-4": {
+        "title": "Day 4: Hot-air Balloon & Felucca Sailing",
+        "description": "Experience a hot-air balloon ride followed by a Felucca sailing trip and sunset."
+      },
+      "day-5": {
+        "title": "Day 5: Arrival & Optional Activities",
+        "description": "Optional activities upon arrival to customize your first day in Luxor."
+      }
+    },
+    "details": {
+      "journey": "The Journey",
+      "pricingTitle": "Pricing Structure",
+      "carDriver": "Private Car with Driver",
+      "carDriverDesc": "Comfortable private transportation for up to 4 persons for the full day.",
+      "guide": "Professional Tour Guide",
+      "guideDesc": "Optional add-on for expert insights and deep historical context.",
+      "perDay": "per day",
+      "enhance": "Enhance Your Trip",
+      "addOptional": "Additional Optional Activities",
+      "bookTour": "Book This Tour",
+      "bookTourDesc": "To reserve this itinerary or customize it with optional activities, please contact our team directly. We are happy to design a schedule that perfectly matches your pace.",
+      "emailUs": "Email Us",
+      "callWhatsapp": "Call / WhatsApp",
+      "location": "Location",
+      "egypt": "Luxor, Egypt",
+      "sendEmail": "Send an Email",
+      "optionalList": {
+        "horse": {
+          "title": "Horse Riding",
+          "desc": "Experience the landscape of Luxor on authentic Arabian horses."
+        },
+        "camel": {
+          "title": "Camel Riding",
+          "desc": "A traditional way to traverse the desert dunes and villages."
+        },
+        "bbq": {
+          "title": "Desert BBQ",
+          "desc": "A freshly prepared barbecue dinner in the quiet desert."
+        },
+        "camping": {
+          "title": "Desert Camping",
+          "desc": "Spend the night under the stars in a traditional camp."
+        },
+        "dahabiya": {
+          "title": "Dahabiya Nile Cruises",
+          "desc": "Luxor to Aswan 4 nights sailing experience."
+        },
+        "custom": {
+          "title": "Customized Experiences",
+          "desc": "Tailor-made activities based on your personal preferences."
+        }
+      }
+    }
+  },
+  "dahabiya": {
+    "sub": "Mystical Nile Sailing",
+    "title": "Private Dahabiya Sailing Cruises",
+    "desc": "Experience a private Dahabiya charter for 10-15 persons. Enjoy a one-night exclusive journey on the Nile for €3000, creating memories that last a lifetime.",
+    "cta": "Inquire About Cruises",
+    "details": {
+      "sub": "The Experience",
+      "desc1": "Step aboard your private Dahabiya sailboat and experience the timeless magic of the River Nile. Tailored for groups of 10 to 15 guests, this full boat charter guarantees an intimate, exclusive atmosphere away from the crowded cruise ships.",
+      "desc2": "Enjoy a one-night journey that immerses you in the peaceful rhythms of river life, passing lush riverbanks, ancient temples, and stunning Egyptian sunsets, all while being catered to by a dedicated crew.",
+      "charterTitle": "Charter Details",
+      "capacity": "Capacity",
+      "guests": "10–15 Guests",
+      "exclusivity": "Exclusivity",
+      "fullCharter": "Full Charter",
+      "duration": "Duration",
+      "oneNight": "One Night",
+      "totalRate": "Total Charter Rate",
+      "secures": "Secures the entire vessel for your private group for the one-night experience.",
+      "perVoyage": "Per Voyage",
+      "inquireTitle": "Inquire About Charters",
+      "inquireDesc": "Dahabiya sailing is highly requested and requires advanced booking. Please reach out to our concierge to verify dates and discuss your group's specific requirements.",
+      "departures": "Departures",
+      "requestAvailability": "Request Availability",
+      "nileCruises": "Nile Cruises",
+      "charter": "Exclusive Charter",
+      "title": "Private Dahabiya Sailing"
+    }
+  },
+  "about": {
+    "sub": "Our Story",
+    "title": "About Us & Satalana Travels",
+    "desc1": "With 15 years of experience in the tourism industry, Alaa has dedicated his life to showcasing the true essence of Egypt. His deep-rooted passion for history and culture ensures that every guest experiences the magic of Luxor authentically.",
+    "desc2": "The mission of Satalana Travels is to provide luxury accommodation, private tours, and personalized service, making sure that every journey is memorable, seamless, and uniquely yours.",
+    "exp": "15+ Years Experience",
+    "service": "Personalized Service",
+    "tours": "Private Tours",
+    "authentic": "Authentic Experiences",
+    "why": {
+      "accTitle": "Luxury Accommodation",
+      "accDesc": "Stay in our meticulously designed traditional houses.",
+      "toursTitle": "Private Tours",
+      "toursDesc": "Explore with your own private car, driver, and optional guide.",
+      "cruiseTitle": "Nile Cruises",
+      "cruiseDesc": "Sail the Nile on traditional Dahabiyas.",
+      "localTitle": "Local Experiences",
+      "localDesc": "Engage in desert camping, BBQ, and camel rides."
+    }
+  },
+  "contact": {
+    "sub": "Begin Your Journey",
+    "title": "Contact Us Directly",
+    "desc": "Reach out directly to Alaa and the Satalana team to design your customized Luxor stay. We prefer personal communication to tailor your experience perfectly.",
+    "email": "Email",
+    "callWhatsapp": "Call / WhatsApp",
+    "sendEmail": "Send an Email",
+    "inquirySubject": "Satalana Inquiry"
+  },
+  "footer": {
+    "desc": "Providing luxury accommodation, private tours, and personalized service in the heart of Egypt.",
+    "reservations": "Reservations",
+    "villas": "Private Villas",
+    "tours": "Private Tours",
+    "dahabiyas": "Nile Dahabiyas",
+    "company": "Company",
+    "about": "About Us",
+    "contact": "Contact Host",
+    "rights": "© 2026 Satalana. All rights reserved.",
+    "shortBrand": "Satalana Luxor"
+  }
+}
