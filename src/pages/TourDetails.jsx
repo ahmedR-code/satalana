@@ -132,37 +132,39 @@ export default function TourDetails() {
             </motion.div>
 
             {/* Pricing Schema Grid */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-              className="bg-surface-container p-10 rounded-2xl border border-surface-variant ambient-shadow"
-            >
-              <h3 className="font-headline-md text-3xl text-charcoal mb-8">{t('tours.details.pricingTitle')}</h3>
-              <div className="flex flex-col gap-8">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-outline-variant/40 pb-8 gap-4">
-                  <div>
-                    <h4 className="font-semibold text-charcoal text-xl mb-1">{t('tours.details.carDriver')}</h4>
-                    <p className="text-sm text-stone max-w-xs leading-relaxed">{t('tours.details.carDriverDesc')}</p>
+            {tour.id !== 'day-5' && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8 }}
+                className="bg-surface-container p-10 rounded-2xl border border-surface-variant ambient-shadow"
+              >
+                <h3 className="font-headline-md text-3xl text-charcoal mb-8">{t('tours.details.pricingTitle')}</h3>
+                <div className="flex flex-col gap-8">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-outline-variant/40 pb-8 gap-4">
+                    <div>
+                      <h4 className="font-semibold text-charcoal text-xl mb-1">{t('tours.details.carDriver')}</h4>
+                      <p className="text-sm text-stone max-w-xs leading-relaxed">{t('tours.details.carDriverDesc')}</p>
+                    </div>
+                    <div className="sm:text-right">
+                      <span className="font-headline-md text-charcoal text-4xl font-semibold">€80</span>
+                      <span className="font-label-caps text-stone text-xs block mt-1">{t('tours.details.perDay')}</span>
+                    </div>
                   </div>
-                  <div className="sm:text-right">
-                    <span className="font-headline-md text-charcoal text-4xl font-semibold">€80</span>
-                    <span className="font-label-caps text-stone text-xs block mt-1">{t('tours.details.perDay')}</span>
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+                    <div>
+                      <h4 className="font-semibold text-charcoal text-xl mb-1">{t('tours.details.guide')}</h4>
+                      <p className="text-sm text-stone max-w-xs leading-relaxed">{t('tours.details.guideDesc')}</p>
+                    </div>
+                    <div className="sm:text-right">
+                      <span className="font-headline-md text-charcoal text-4xl font-semibold">€50</span>
+                      <span className="font-label-caps text-stone text-xs block mt-1">{t('tours.details.perDay')}</span>
+                    </div>
                   </div>
                 </div>
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
-                  <div>
-                    <h4 className="font-semibold text-charcoal text-xl mb-1">{t('tours.details.guide')}</h4>
-                    <p className="text-sm text-stone max-w-xs leading-relaxed">{t('tours.details.guideDesc')}</p>
-                  </div>
-                  <div className="sm:text-right">
-                    <span className="font-headline-md text-charcoal text-4xl font-semibold">€50</span>
-                    <span className="font-label-caps text-stone text-xs block mt-1">{t('tours.details.perDay')}</span>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            )}
 
             {/* Additional Optional Activities Block */}
             <motion.div

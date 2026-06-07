@@ -78,9 +78,17 @@ const TOURS = [
     id: 'day-5',
     title: 'Day 5: Arrival & Optional Activities',
     duration: 'Flexible',
-    price: '80',
+    price: '',
     image: imgDay5,
     description: 'Optional activities upon arrival to customize your first day in Luxor.'
+  },
+  {
+    id: 'dahabiya',
+    title: 'Dahabiya Cruise',
+    duration: 'One Night',
+    price: '3000',
+    image: imgDahabiya,
+    description: 'Private Dahabiya for 10–15 guests\nFull boat charter\nOne night experience'
   }
 ]
 
@@ -123,6 +131,14 @@ export default function Home() {
 
   // Dynamically translate tours
   const tours = TOURS.map(tour => {
+    if (tour.id === 'dahabiya') {
+      return {
+        ...tour,
+        title: t('dahabiya.title', tour.title),
+        description: t('dahabiya.cardDesc', tour.description),
+        duration: t('dahabiya.details.oneNight', tour.duration)
+      }
+    }
     const durationLabel = tour.id === 'day-5' ? t('tours.flexible') : t('tours.fullDay')
     return {
       ...tour,
@@ -170,7 +186,7 @@ export default function Home() {
             </li>
             <li>
               <button 
-                onClick={() => scrollToSection('cruise')} 
+                onClick={() => navigate('/dahabiya-details')} 
                 className="text-on-surface-variant hover:text-charcoal font-label-caps hover:opacity-80 transition-luxury cursor-pointer"
               >
                 {t('nav.cruise')}
@@ -242,7 +258,7 @@ export default function Home() {
                 {t('nav.tours')}
               </button>
               <button 
-                onClick={() => scrollToSection('cruise')}
+                onClick={() => { setMobileMenuOpen(false); navigate('/dahabiya-details'); }}
                 className="text-left py-2 border-b border-surface-variant font-label-caps text-charcoal"
               >
                 {t('nav.cruise')}
@@ -427,8 +443,18 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.8 }}
-                onClick={() => navigate('/tour-details', { state: { tour } })}
-                className="bg-background rounded-2xl overflow-hidden ambient-shadow flex flex-col lg:flex-row group cursor-pointer transition-luxury hover:-translate-y-2 hover:shadow-2xl border border-white/50"
+                onClick={() => {
+                  if (tour.id === 'dahabiya') {
+                    navigate('/dahabiya-details')
+                  } else {
+                    navigate('/tour-details', { state: { tour } })
+                  }
+                }}
+                className={`rounded-2xl overflow-hidden ambient-shadow flex flex-col lg:flex-row group cursor-pointer transition-luxury hover:-translate-y-2 hover:shadow-2xl border ${
+                  tour.id === 'dahabiya'
+                    ? 'bg-gradient-to-br from-background via-background to-temple-beige/15 border-temple-beige/60 shadow-md'
+                    : 'bg-background border-white/50'
+                }`}
               >
                 <div className="relative h-64 lg:h-auto lg:w-1/2 overflow-hidden">
                   <img 
@@ -436,22 +462,28 @@ export default function Home() {
                     alt={tour.title} 
                     className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 bg-charcoal/80 backdrop-blur-md px-3 py-1 rounded text-white font-label-caps text-[10px]">
+                  <div className="absolute top-4 left-4 bg-charcoal/80 backdrop-blur-md px-3 py-1 rounded text-white font-label-caps text-[10px] flex items-center gap-1">
+                    {tour.id === 'dahabiya' && <Sparkles size={10} className="text-temple-beige" />}
                     {tour.duration}
                   </div>
                 </div>
                 <div className="p-8 lg:w-1/2 flex flex-col justify-between relative">
                   <div className="absolute left-0 top-10 bottom-10 w-px bg-gradient-to-b from-transparent via-mud-brick/20 to-transparent hidden lg:block"></div>
                   <div>
-                    <h3 className="font-headline-md text-charcoal text-2xl mb-4 group-hover:text-mud-brick transition-colors">
+                    <h3 className="font-headline-md text-charcoal text-2xl mb-4 group-hover:text-mud-brick transition-colors flex items-center gap-2">
                       {tour.title}
+                      {tour.id === 'dahabiya' && <Sparkles size={16} className="text-temple-beige animate-pulse" />}
                     </h3>
-                    <p className="font-body-md text-on-surface-variant mb-8 text-sm leading-loose">
+                    <p className="font-body-md text-on-surface-variant mb-8 text-sm leading-loose whitespace-pre-line">
                       {tour.description}
                     </p>
                   </div>
                   <div className="flex items-center justify-between mt-auto">
-                    <span className="font-label-caps text-charcoal font-semibold">{t('tours.fromPrice', { price: tour.price })}</span>
+                    {tour.price ? (
+                      <span className="font-label-caps text-charcoal font-semibold">{t('tours.fromPrice', { price: tour.price })}</span>
+                    ) : (
+                      <span></span>
+                    )}
                     <span className="text-temple-beige font-label-caps flex items-center gap-1 group-hover:text-mud-brick transition-colors">
                       {t('tours.viewDetails')} <ArrowRight size={14} />
                     </span>
@@ -506,40 +538,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. DAHABIYA CRUISE SECTION */}
-      <section id="cruise" className="relative py-32 md:py-48 px-margin-mobile md:px-margin-desktop overflow-hidden scroll-mt-20">
-        <div className="absolute inset-0 z-0">
-          <motion.img 
-            initial={{ scale: 1.1 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-            viewport={{ once: true }}
-            alt="Dahabiya sailing boat on the Nile" 
-            className="w-full h-full object-cover" 
-            src={imgDahabiya}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-charcoal/50 via-charcoal/80 to-charcoal/95 backdrop-blur-[2px]"></div>
-        </div>
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8 }}
-          className="relative z-10 max-w-4xl mx-auto text-center text-white"
-        >
-          <span className="font-label-sm text-temple-beige uppercase tracking-[0.3em] mb-6 block text-xs">{t('dahabiya.sub')}</span>
-          <h2 className="font-headline-lg-mobile md:font-display-lg text-white mb-8 drop-shadow-md">{t('dahabiya.title')}</h2>
-          <p className="font-body-lg text-surface-variant mb-12 max-w-2xl mx-auto leading-loose text-white/90">
-            {t('dahabiya.desc')}
-          </p>
-          <button 
-            onClick={() => navigate('/dahabiya-details')}
-            className="bg-temple-beige text-charcoal font-label-caps py-4 px-10 rounded-full hover:bg-surface hover:-translate-y-1 transition-luxury shadow-2xl inline-flex items-center gap-3 tracking-widest"
-          >
-            {t('dahabiya.cta')} <ArrowRight size={16} />
-          </button>
-        </motion.div>
-      </section>
+
 
       {/* 6. WHY CHOOSE US & ABOUT US SECTION */}
       <section id="about" className="py-section-mobile md:py-section-desktop px-margin-mobile md:px-margin-desktop bg-surface-container scroll-mt-20">
