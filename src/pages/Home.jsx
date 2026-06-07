@@ -17,7 +17,7 @@ import imgDay3 from '../assets/tours/Day 3/WhatsApp Image 2026-06-07 at 5.42.09 
 import imgDay4 from '../assets/tours/Day 4/WhatsApp Image 2026-06-07 at 5.48.37 PM (1).jpeg'
 import imgDay5 from '../assets/tours/day 5/WhatsApp Image 2026-06-07 at 5.50.43 PM.jpeg'
 
-import imgDahabiya from '../assets/tours/DAHABIYA CRUISE 6/WhatsApp Image 2026-06-06 at 1.57.00 PM (4).jpeg'
+import imgDahabiya from '../assets/tours/DAHABIYA CRUISE 6/cover.jpeg'
 
 // Constants for generic hero/backgrounds from the approved references if needed
 const HERO_SUNSET = "https://lh3.googleusercontent.com/aida-public/AB6AXuDOAjXczCyi1CMENs1a9mewNlIjS4d_y_V9UpDXutl-Rt-g4H1_Fm_pijsVVFJJsqtgrcZVCXYWKflcGcGvEf03qduOB0WX2g6xjgXNxnvtH3WDLYWXgfVlogtu7-9LT1bAV5EbYBwr96-6GZ-iy8aRxk76Cp3TPjX1XcU3QMTMcat3Dnc8nPzKStpw2f2SIFTortb5e7fstSY4Q3ZFLseefyw4sXxaRBqNyGB2gI1p8RM_et8Tfyphw_U1xngWa_N2FkfiwByEncjN"
