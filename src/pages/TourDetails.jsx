@@ -25,7 +25,7 @@ const DEFAULT_TOUR = {
   id: 'day-1',
   title: 'Day 1: Karnak & West Bank Sunset',
   duration: 'Full Day',
-  price: '80',
+  price: '20',
   description: 'Explore Karnak Temple, Luxor Museum, Luxor Temple, and enjoy a West Bank sunset.'
 }
 
@@ -148,7 +148,7 @@ export default function TourDetails() {
                       <p className="text-sm text-stone max-w-xs leading-relaxed">{t('tours.details.carDriverDesc')}</p>
                     </div>
                     <div className="sm:text-right">
-                      <span className="font-headline-md text-charcoal text-4xl font-semibold">€80</span>
+                      <span className="font-headline-md text-charcoal text-4xl font-semibold">€{tour.price}</span>
                       <span className="font-label-caps text-stone text-xs block mt-1">{t('tours.details.perDay')}</span>
                     </div>
                   </div>

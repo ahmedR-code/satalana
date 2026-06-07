@@ -6,7 +6,16 @@ import ImageGallery from '../components/ImageGallery'
 
 // Dynamically load all images from Dahabiya folder
 const DAHABIYA_MODULES = import.meta.glob('../assets/tours/DAHABIYA CRUISE 6/*.jpeg', { eager: true, import: 'default' })
-const DAHABIYA_IMAGES = Object.values(DAHABIYA_MODULES)
+
+// Ensure cover.jpeg is the first image in the gallery, followed by the remaining images
+const DAHABIYA_IMAGES = (() => {
+  const entries = Object.entries(DAHABIYA_MODULES)
+  const coverEntry = entries.find(([path]) => path.endsWith('cover.jpeg'))
+  const otherEntries = entries.filter(([path]) => !path.endsWith('cover.jpeg'))
+  
+  const sortedEntries = coverEntry ? [coverEntry, ...otherEntries] : entries
+  return sortedEntries.map(([, imgModule]) => imgModule)
+})()
 
 export default function DahabiyaDetails() {
   const { t, i18n } = useTranslation()

@@ -46,7 +46,7 @@ const TOURS = [
     id: 'day-1',
     title: 'Day 1: Karnak & West Bank Sunset',
     duration: 'Full Day',
-    price: '80',
+    price: '20',
     image: imgDay1,
     description: 'Explore Karnak Temple, Luxor Museum, Luxor Temple, and enjoy a West Bank sunset.'
   },
@@ -54,7 +54,7 @@ const TOURS = [
     id: 'day-2',
     title: 'Day 2: Medinet Habu & Valley of the Queens',
     duration: 'Full Day',
-    price: '80',
+    price: '20',
     image: imgDay2,
     description: 'Visit Medinet Habu, Valley of the Queens, Temple of Seti, Deir el-Medina, and alabaster workshops.'
   },
@@ -62,7 +62,7 @@ const TOURS = [
     id: 'day-3',
     title: 'Day 3: Valley of the Kings & Banana Island',
     duration: 'Full Day',
-    price: '80',
+    price: '20',
     image: imgDay3,
     description: 'Discover the Valley of the Kings, Hatshepsut, Colossi of Memnon, and a Nile trip to Banana Island.'
   },
@@ -70,7 +70,7 @@ const TOURS = [
     id: 'day-4',
     title: 'Day 4: Hot-air Balloon & Felucca Sailing',
     duration: 'Full Day',
-    price: '80',
+    price: '70',
     image: imgDay4,
     description: 'Experience a hot-air balloon ride followed by a Felucca sailing trip and sunset.'
   },
