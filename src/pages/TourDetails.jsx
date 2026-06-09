@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { ArrowLeft, Clock, PlusCircle, Mail, Phone, MapPin } from 'lucide-react'
 import ImageGallery from '../components/ImageGallery'
 
+const WHATSAPP_URL = "https://wa.me/201024595279?text=Hello%20Alaa%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20Luxor%20tours%20and%20accommodations.%0A%0AThank%20you."
+
 // Dynamically load all images from respective folders
 const DAY1_MODULES = import.meta.glob('../assets/tours/Day 1/*.jpeg', { eager: true, import: 'default' })
 const DAY2_MODULES = import.meta.glob('../assets/tours/Day 2/*.jpeg', { eager: true, import: 'default' })
@@ -237,10 +239,12 @@ export default function TourDetails() {
               </div>
 
               <a
-                href={`mailto:Alaa.luxor1993@gmail.com?subject=${t('contact.inquirySubject')}`}
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full inline-flex justify-center bg-temple-beige text-charcoal font-label-caps py-4 rounded-full hover:bg-surface-variant hover:-translate-y-1 hover:shadow-lg transition-luxury mt-12 text-center tracking-widest"
               >
-                {t('tours.details.sendEmail')}
+                {t('tours.details.bookWhatsApp')}
               </a>
             </motion.div>
           </div>

@@ -10,6 +10,25 @@ import {
 // Import actual client assets
 import imgHouse1 from '../assets/accommodations/house-1/WhatsApp Image 2026-06-06 at 1.43.47 PM.jpeg'
 import imgHouse2 from '../assets/accommodations/house-2/WhatsApp Image 2026-06-06 at 1.47.18 PM.jpeg'
+import imgComingSoon1 from '../assets/accommodations/coming soon/photo_2026-06-09_12-13-00.jpg'
+import imgComingSoon2 from '../assets/accommodations/coming soon/photo_2026-06-09_12-13-09.jpg'
+
+const WHATSAPP_URL = "https://wa.me/201024595279?text=Hello%20Alaa%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20Luxor%20tours%20and%20accommodations.%0A%0AThank%20you."
+
+const COMING_SOON_ACCOMMODATIONS = [
+  {
+    id: 'coming-soon-1',
+    image: imgComingSoon1,
+    name: 'Traditional Retreat',
+    description: 'An upcoming premium retreat designed for deep tranquility and local luxury.'
+  },
+  {
+    id: 'coming-soon-2',
+    image: imgComingSoon2,
+    name: 'Heritage Sanctuary',
+    description: 'An upcoming authentic sanctuary blending heritage architecture with modern comfort.'
+  }
+]
 
 import imgDay1 from '../assets/tours/Day 1/WhatsApp Image 2026-06-07 at 5.22.05 PM (1).jpeg'
 import imgDay2 from '../assets/tours/Day 2/WhatsApp Image 2026-06-07 at 5.41.02 PM (1).jpeg'
@@ -127,6 +146,13 @@ export default function Home() {
     name: t(`accommodations.props.${acc.id}.name`, acc.name),
     description: t(`accommodations.props.${acc.id}.description`, acc.description),
     features: t(`accommodations.props.${acc.id}.features`, { returnObjects: true }) || acc.features
+  }))
+
+  // Dynamically translate coming soon accommodations
+  const comingSoonAccommodations = COMING_SOON_ACCOMMODATIONS.map(acc => ({
+    ...acc,
+    name: t(`accommodations.comingSoonProps.${acc.id}.name`, acc.name),
+    description: t(`accommodations.comingSoonProps.${acc.id}.description`, acc.description)
   }))
 
   // Dynamically translate tours
@@ -418,12 +444,30 @@ export default function Home() {
 
         {/* Coming Soon Placeholders */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-gutter mt-8">
-          <div className="bg-surface-container-low border border-surface-variant rounded-2xl p-8 flex flex-col items-center justify-center h-[200px] text-center">
-            <p className="font-label-caps text-stone text-sm tracking-widest">{t('accommodations.comingSoon')}</p>
-          </div>
-          <div className="bg-surface-container-low border border-surface-variant rounded-2xl p-8 flex flex-col items-center justify-center h-[200px] text-center">
-            <p className="font-label-caps text-stone text-sm tracking-widest">{t('accommodations.comingSoon')}</p>
-          </div>
+          {comingSoonAccommodations.map((acc) => (
+            <div 
+              key={acc.id}
+              className="group cursor-default relative rounded-2xl overflow-hidden ambient-shadow h-[500px]"
+            >
+              <img 
+                alt={acc.name} 
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                src={acc.image}
+              />
+              <div className="absolute inset-0 bg-black/35 backdrop-blur-[0.5px]"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-transparent to-transparent"></div>
+              
+              <div className="absolute bottom-0 left-0 w-full p-8">
+                <div className="inline-block bg-temple-beige text-charcoal font-label-caps px-4 py-2 rounded-xl mb-3 shadow-md">
+                  <span>{t('accommodations.comingSoonBadge')}</span>
+                </div>
+                <h3 className="font-headline-md text-surface mb-2">
+                  {acc.name}
+                </h3>
+                <p className="font-body-md text-surface-variant max-w-md">{acc.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
       {/* 4. TOURS & EXPERIENCES SECTION */}
@@ -628,10 +672,12 @@ export default function Home() {
           </div>
           
           <a 
-            href={`mailto:Alaa.luxor1993@gmail.com?subject=${t('contact.inquirySubject')}`}
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-charcoal text-surface font-label-caps py-4 px-10 rounded-full hover:bg-temple-beige hover:scale-[1.02] transition-luxury mt-12 shadow-md text-center"
           >
-            {t('contact.sendEmail')}
+            {t('contact.chatWhatsApp')}
           </a>
         </div>
       </section>

@@ -30,15 +30,26 @@
     "desc": "Immergez-vous dans un luxe authentique avec une architecture inspirée de l'héritage égyptien antique et des dunes de sable.",
     "rate": "€{{price}} / personne / nuit",
     "comingSoon": "Bientôt Disponible",
+    "comingSoonBadge": "Bientôt Disponible",
     "privateStay": "Séjour Privé",
     "theExperience": "L'Expérience",
     "highlights": "Points Forts",
     "contactReserve": "Contacter l'Hôte pour Réserver",
     "conciergeText": "Veuillez contacter directement Alaa et notre équipe de conciergerie Satalana pour vérifier la disponibilité et personnaliser votre séjour privé.",
-    "emailNow": "Envoyez-nous un Email",
+    "bookWhatsApp": "Réserver sur WhatsApp",
     "standardRate": "Tarif Standard",
     "personNight": "/ personne / nuit",
     "westBankEgypt": "Rive Ouest, Louxor, Égypte",
+    "comingSoonProps": {
+      "coming-soon-1": {
+        "name": "Retraite Traditionnelle",
+        "description": "Une prochaine retraite haut de gamme conçue pour une tranquillité profonde et un luxe local."
+      },
+      "coming-soon-2": {
+        "name": "Sanctuaire du Patrimoine",
+        "description": "Un prochain sanctuaire authentique alliant architecture patrimoniale et confort moderne."
+      }
+    },
     "props": {
       "property-1": {
         "name": "Maison Traditionnelle",
@@ -116,7 +127,7 @@
       "callWhatsapp": "Appel / WhatsApp",
       "location": "Lieu",
       "egypt": "Louxor, Égypte",
-      "sendEmail": "Envoyer un Email",
+      "bookWhatsApp": "Réserver sur WhatsApp",
       "optionalList": {
         "horse": {
           "title": "Balades à Cheval",
@@ -168,7 +179,7 @@
       "inquireTitle": "S'informer sur les Charters",
       "inquireDesc": "La navigation en Dahabiya est très demandée et nécessite une réservation préalable. Veuillez contacter notre conciergerie pour vérifier les dates et discuter de vos besoins spécifiques.",
       "departures": "Départs",
-      "requestAvailability": "Demander les Disponibilités",
+      "requestWhatsApp": "Réserver sur WhatsApp",
       "nileCruises": "Croisières sur le Nil",
       "charter": "Charter Exclusif",
       "title": "Navigation Privée en Dahabiya"
@@ -200,7 +211,7 @@
     "desc": "Contactez directement Alaa et l'équipe de Satalana pour concevoir votre séjour sur mesure à Louxor. Nous privilégions une communication directe afin de personnaliser parfaitement votre expérience.",
     "email": "Email",
     "callWhatsapp": "Appel / WhatsApp",
-    "sendEmail": "Envoyer un Email",
+    "chatWhatsApp": "Discuter sur WhatsApp",
     "inquirySubject": "Demande de Renseignements Satalana"
   },
   "footer": {

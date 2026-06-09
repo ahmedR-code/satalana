@@ -30,15 +30,26 @@
     "desc": "Immerse yourself in authentic luxury with architecture inspired by ancient Egyptian heritage and sand dunes.",
     "rate": "€{{price}} / person / night",
     "comingSoon": "Coming Soon",
+    "comingSoonBadge": "Coming Soon",
     "privateStay": "Private Stay",
     "theExperience": "The Experience",
     "highlights": "Highlights",
     "contactReserve": "Contact Host to Reserve",
     "conciergeText": "Please reach out directly to Alaa and our Satalana concierge team to check availability and tailor your private stay.",
-    "emailNow": "Email Us Now",
+    "bookWhatsApp": "Book on WhatsApp",
     "standardRate": "Standard Rate",
     "personNight": "/ person / night",
     "westBankEgypt": "West Bank, Luxor, Egypt",
+    "comingSoonProps": {
+      "coming-soon-1": {
+        "name": "Traditional Retreat",
+        "description": "An upcoming premium retreat designed for deep tranquility and local luxury."
+      },
+      "coming-soon-2": {
+        "name": "Heritage Sanctuary",
+        "description": "An upcoming authentic sanctuary blending heritage architecture with modern comfort."
+      }
+    },
     "props": {
       "property-1": {
         "name": "Traditional House",
@@ -116,7 +127,7 @@
       "callWhatsapp": "Call / WhatsApp",
       "location": "Location",
       "egypt": "Luxor, Egypt",
-      "sendEmail": "Send an Email",
+      "bookWhatsApp": "Book on WhatsApp",
       "optionalList": {
         "horse": {
           "title": "Horse Riding",
@@ -168,7 +179,7 @@
       "inquireTitle": "Inquire About Charters",
       "inquireDesc": "Dahabiya sailing is highly requested and requires advanced booking. Please reach out to our concierge to verify dates and discuss your group's specific requirements.",
       "departures": "Departures",
-      "requestAvailability": "Request Availability",
+      "requestWhatsApp": "Book on WhatsApp",
       "nileCruises": "Nile Cruises",
       "charter": "Exclusive Charter",
       "title": "Private Dahabiya Sailing"
@@ -200,7 +211,7 @@
     "desc": "Reach out directly to Alaa and the Satalana team to design your customized Luxor stay. We prefer personal communication to tailor your experience perfectly.",
     "email": "Email",
     "callWhatsapp": "Call / WhatsApp",
-    "sendEmail": "Send an Email",
+    "chatWhatsApp": "Message on WhatsApp",
     "inquirySubject": "Satalana Inquiry"
   },
   "footer": {

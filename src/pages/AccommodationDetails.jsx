@@ -4,6 +4,8 @@ import { useTranslation } from 'react-i18next'
 import { ArrowLeft, Check, MapPin, Mail, Phone } from 'lucide-react'
 import ImageGallery from '../components/ImageGallery'
 
+const WHATSAPP_URL = "https://wa.me/201024595279?text=Hello%20Alaa%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20your%20Luxor%20tours%20and%20accommodations.%0A%0AThank%20you."
+
 // Dynamically load all images from respective folders using Vite's import.meta.glob
 const HOUSE_1_MODULES = import.meta.glob('../assets/accommodations/house-1/*.jpeg', { eager: true, import: 'default' })
 const HOUSE_2_MODULES = import.meta.glob('../assets/accommodations/house-2/*.jpeg', { eager: true, import: 'default' })
@@ -149,10 +151,12 @@ export default function AccommodationDetails() {
                 </div>
 
                 <a
-                  href={`mailto:Alaa.luxor1993@gmail.com?subject=${t('contact.inquirySubject')}`}
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-full inline-flex justify-center bg-charcoal text-surface font-label-caps py-4 rounded-full hover:bg-temple-beige transition-luxury mt-8 shadow-md text-center tracking-widest"
                 >
-                  {t('accommodations.emailNow')}
+                  {t('accommodations.bookWhatsApp')}
                 </a>
               </div>
             </div>
